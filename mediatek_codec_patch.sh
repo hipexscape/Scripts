@@ -1,13 +1,13 @@
 # Usage: curl -sL "https://raw.githubusercontent.com/hipexscape/Scripts/tsm/mediatek_codec_patch.sh" | bash
 
 # Media: Import extractor changes from t-alps-q0.mp1-V9.122.1
-git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/lilium-haine/frameworks_av/commit/9597c3287ad50259045c048c860438df0f2cadb1.patch")"
+git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/hipexscape-stuff/frameworks_av/commit/65d50061a5b32e3bc981805f331a4ba1bb7a501b.patch")"
 
-# begonia: media: libstagefright: Limit max width/height to display size
-git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/lilium-haine/frameworks_av/commit/28c3219772889216f48eb94df6d133574c4223b3.patch")"
+# media: libstagefright: Limit max width/height to display size
+git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/hipexscape-stuff/frameworks_av/commit/dc3567608ef40ee5fc3c4000dc8f2d0d066f886b.patch")"
 
 # Media: Import codecs/omx changes from t-alps-q0.mp1-V9.122.1
-git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/lilium-haine/frameworks_av/commit/c385c06fc48198d886367167a97142601ebbed8e.patch")"
+git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/hipexscape-stuff/frameworks_av/commit/da6f6882af7cdec3f71dc030646b7614663b2c37.patch")"
 
 # stagefright: remove HW_TEXTRUE usage from SurfaceMediaSource
-git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/lilium-haine/frameworks_av/commit/33488af1788337a294ba3873df4bdefba144596d.patch")"
+git -C "frameworks/av" am <<<"$(curl -sL "https://github.com/hipexscape-stuff/frameworks_av/commit/a617bfe0eb1b6b0f392bd1a8103b66bacbf69f0e.patch")"
